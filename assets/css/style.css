@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-image: url("../image/istockphoto-2162577343-612x612.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.calculator-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iphone-calculator {
+  background-color: #1c1c1e;
+  border-radius: 40px;
+  padding: 2rem 1rem;
+  width: 360px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.calculator-display {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.input-field {
+  background-color: #d4d4d2a8;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  padding: 0.7rem 1rem;
+  text-align: right;
+  transition: all 0.3s linear;
+}
+.input-field:focus{
+  background-color: #d4d4d2;
+}
+
+.input-field.answer {
+  background-color: #d4d4d2;
+  color: black;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fff;
+}
+
+.btn {
+  border: none;
+  border-radius: 50%;
+  height: 70px;
+  font-size: 1.6rem;
+  color: white;
+  transition: background-color 0.2s linear;
+}
+
+.btn.gray {
+  background-color: #a99c9cf6;
+  color: black;
+}
+
+.btn.dark {
+  background-color: #333333;
+}
+
+.btn.orange {
+  background-color: #ff9500;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.btn.zero {
+  border-radius: 35px;
+  text-align: left;
+  padding-left: 25px;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+ ::placeholder {
+      color: black;
+      opacity: 1;
+    }
